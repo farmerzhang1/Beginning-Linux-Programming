@@ -5,7 +5,7 @@
 # directory for the string POSIX, and then prints the name of
 # those files to the standard output.
 echo $(grep -l POSIX *)
-grep -l POSIX * | more
+grep -l directory * | more
 for file in *
 do
   if grep -q POSIX $file

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo '$HOME': $HOME
+echo '$PATH': $PATH
+echo '$PS1': $PS1
+echo '$PS2': $PS2
+echo '$IFS': $IFS
+echo '$0': $0
+echo '$#': $#
+echo '$$': $$

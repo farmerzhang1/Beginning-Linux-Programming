@@ -2,6 +2,7 @@
 
 myvar="Hi there"
 
+echo myvar
 echo $myvar
 echo "$myvar"
 echo '$myvar'
@@ -10,6 +11,6 @@ echo \$myvar
 echo Enter some text
 read myvar
 
-echo '$myvar' now equals $myvar
+echo '$myvar' now equals to $myvar
 
 exit 0

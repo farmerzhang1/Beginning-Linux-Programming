@@ -1,7 +1,7 @@
 #!/bin/sh
 
 unset foo
-echo ${foo:-bar} 
+echo ${foo:-bar}
 
 foo=fud
 echo ${foo:-bar}

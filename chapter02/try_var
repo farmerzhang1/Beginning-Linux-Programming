@@ -1,5 +1,5 @@
 #!/bin/sh
-
+IFS='s'
 salutation="Hello"
 echo $salutation
 echo "The program $0 is now running"

@@ -76,4 +76,3 @@ questions - a script using a textual dialog box.
 gquestions - a script using the GNOME graphical dialog box.
 
 app/cd_db  -  A shell script that implements the CD Database application.
-
