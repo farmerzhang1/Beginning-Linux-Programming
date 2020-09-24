@@ -45,10 +45,10 @@ get_confirm() {
   do
     read x
     case "$x" in
-      y | yes | Y | Yes | YES ) 
+      y | yes | Y | Yes | YES )
         return 0;;
-      n | no  | N | No  | NO ) 
-        echo 
+      n | no  | N | No  | NO )
+        echo
         echo "Cancelled"
         return 1;;
       *) echo "Please enter yes or no" ;;
@@ -143,18 +143,18 @@ add_records() {
   cdac=${tmp%%,*}
 
   # Check that they want to enter the information
-  
+
   echo About to add new entry
   echo "$cdcatnum $cdtitle $cdtype $cdac"
 
   # If confirmed then append it to the titles file
-  
+
   if get_confirm ; then
     insert_title $cdcatnum,$cdtitle,$cdtype,$cdac
     add_record_tracks
   else
     remove_records
-  fi 
+  fi
 
   return
 }
@@ -185,7 +185,7 @@ find_cd() {
   fi
 
   grep "$searchstr" $title_file > $temp_file
-   
+
   set $(wc -l $temp_file)
   linesfound=$1
 
@@ -208,7 +208,7 @@ find_cd() {
 
   if [ -z "$cdcatnum" ]; then
     echo "Sorry, could not extract catalog field from $temp_file"
-    get_return 
+    get_return
     return 0
   fi
 
@@ -311,12 +311,12 @@ list_tracks() {
     num_tracks=$(wc -l $temp_file)
     if [ "$num_tracks" = "0" ]; then
       echo no tracks found for $cdtitle
-    else { 
+    else {
       echo
       echo "$cdtitle :-"
-      echo 
-      cut -f 2- -d , $temp_file 
-      echo 
+      echo
+      cut -f 2- -d , $temp_file
+      echo
     } | ${PAGER:-more}
     fi
   fi
@@ -357,7 +357,7 @@ do
     u) update_cd;;
     c) count_cds;;
     l) list_tracks;;
-    b) 
+    b)
       echo
       more $title_file
       echo

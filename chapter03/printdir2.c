@@ -24,7 +24,7 @@ void printdir(char *dir, int depth)
         lstat(entry->d_name,&statbuf);
         if(S_ISDIR(statbuf.st_mode)) {
             /* Found a directory, but ignore . and .. */
-            if(strcmp(".",entry->d_name) == 0 || 
+            if(strcmp(".",entry->d_name) == 0 ||
                 strcmp("..",entry->d_name) == 0)
                 continue;
             printf("%*s%s/\n",depth,"",entry->d_name);

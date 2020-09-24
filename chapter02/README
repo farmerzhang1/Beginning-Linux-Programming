@@ -5,12 +5,12 @@ first  -  A shell script that searches for files containing the word, "POSIX", a
 
 variable  -  A script that demonstrates the quoting rules for variables.
 
-try_var  -  A script that performs some simple variable manipulation using the environment and 
+try_var  -  A script that performs some simple variable manipulation using the environment and
 parameter variables.
 
 _if  -  A script that asks a question and then uses an "if" statement to make a decision based on the answer.
 
-elif1  -  A modified version of _if. It reports an error message if the user types in anything other than 
+elif1  -  A modified version of _if. It reports an error message if the user types in anything other than
 "yes" or "no".
 
 elif2  -  An improved version of elif1.
@@ -27,7 +27,7 @@ while2  -  A less cumbersome version of for3 that uses a "while" loop.
 
 _until  -  A script that watches for an unexpected user.
 
-case1  -  A revised version of elif2 which is a little more selective and forgiving of unexpected input. 
+case1  -  A revised version of elif2 which is a little more selective and forgiving of unexpected input.
 
 case2  -  An improved version of case1.
 
