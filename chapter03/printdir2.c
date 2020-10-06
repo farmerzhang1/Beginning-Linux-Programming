@@ -41,7 +41,7 @@ void printdir(char *dir, int depth)
 
 int main(int argc, char* argv[])
 {
-    char *topdir, pwd[2]=".";
+    char *topdir, pwd[2]="..";
     if (argc != 2)
         topdir=pwd;
     else
